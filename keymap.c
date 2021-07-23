@@ -23,15 +23,6 @@ int x = 31;
 int currwpm = 0;
 int vert_count = 0; 
 
-//=============  USER CONFIG PARAMS  ===============
-float max_wpm = 110.0f; //WPM value at the top of the graph window
-int graph_refresh_interval = 80; //in milliseconds
-int graph_area_fill_interval = 3; //determines how dense the horizontal lines under the graph line are; lower = more dense
-int vert_interval = 3; //determines frequency of vertical lines under the graph line
-bool vert_line = false; //determines whether to draw vertical lines
-int graph_line_thickness = 3; //determines thickness of graph line in pixels
-//=============  END USER PARAMS  ===============
-
 enum layers {
     _QWERTY = 0,
     _SYMBOLS,
