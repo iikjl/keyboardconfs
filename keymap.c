@@ -24,11 +24,12 @@ int currwpm = 0;
 int vert_count = 0; 
 
 enum layers {
-    _QWERTY = 0,
-    _SYMBOLS,
-    _NUMBERS,
-    _ADJUST,
-    _MOUSE,
+    QWERTY = 0,
+    SYMBOLS,
+    NUMBERS,
+    ADJUST,
+    MOUSE,
+    COLEMAK,
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -46,31 +47,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                        |      |      | Alt  |Symbols|Mouse|  | SYMB | NUMB |      |      |      |
  *                        `----------------------------------'  `----------------------------------'
  */
-    [_QWERTY] = LAYOUT(
+    [QWERTY] = LAYOUT(
       KC_ESC,       KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,                                         KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
       MT(MOD_LSFT, KC_TAB),   KC_A,   KC_S,   KC_D,   KC_F,   KC_G,                                         KC_H,    KC_J,    KC_K,    KC_L,    FI_ODIA, FI_ADIA,
-      KC_LCTL,                 KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   TO(_SYMBOLS),   TO(_NUMBERS), TO(_ADJUST), TO(_MOUSE), KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_MINS, KC_SLSH,
-              KC_LGUI, KC_DEL, KC_LALT, LT(_SYMBOLS, KC_SPC), LT(_MOUSE, KC_ESC), LT(_SYMBOLS, KC_ENT), LT(_NUMBERS, KC_SPC), KC_TAB,  KC_BSPC, KC_RALT
+      KC_LCTL,                 KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   TO(SYMBOLS),   TO(NUMBERS), TO(ADJUST), TO(MOUSE), KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_MINS, KC_SLSH,
+              KC_LGUI, KC_DEL, KC_LALT, LT(SYMBOLS, KC_SPC), LT(MOUSE, KC_ESC), LT(SYMBOLS, KC_ENT), LT(NUMBERS, KC_SPC), KC_TAB,  KC_BSPC, KC_RALT
     ),
 /*
  * Lower Layer: Symbols
  *
  * ,-------------------------------------------.                              ,-------------------------------------------.
- * |        |  !   |  @   |  {   |  }   |  |   |                              |      |      |      |  ?   |  | \ |  Bksp  |
+ * |   lsh  |  !   |  @   |  {   |  }   |  |   |                              |      |      |      |  ?   |  | \ |  Bksp  |
  * |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
- * |        |  #   |  $   |  (   |  )   |  `   |                              |   +  |  -   |  /   |  *   |  %   |  ' "   |
+ * |    ;   |  #   |  $   |  (   |  )   |  `   |                              |   +  |  -   |  /   |  *   |  %   |  ' "   |
  * |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
- * |        |  %   |  ^   |  [   |  ]   |  ~   |  QWR | NUMB |  |  ADJ |  MOU |   &  |  =   |  ,   |  .   |  / ? | - _    |
+ * |    :   |  %   |  ^   |  [   |  ]   |  ~   |  QWR | NUMB |  |  ADJ |  MOU |   &  |  =   |  ,   |  .   |  / ? | - _    |
  * `----------------------+------+------+------+------+------|  |------+------+------+------+------+----------------------'
- *                        |      |      |      |  ;   |  =   |  |  =   |  :   |      |      |      |
- *                        |      |      |      |      |      |  |      |      |      |      |      |
+ *                        |      |      |  ent |  SP   |  =|  |  =   |  SP  |   ent   |      |      |
+ *                        |      |      |      |       |   |  |      |      |         |      |      |
  *                        `----------------------------------'  `----------------------------------'
  */
-    [_SYMBOLS] = LAYOUT(
-      _______, KC_EXLM, KC_AT,   KC_LCBR, KC_RCBR, KC_PIPE,                                     _______, _______, _______, KC_SLSH, KC_BSLS, KC_BSPC,
-      _______, KC_HASH, KC_DLR,  KC_LPRN, KC_RPRN, KC_GRV,                                      KC_PLUS, KC_MINS, KC_SLSH, KC_ASTR, KC_PERC, KC_QUOT,
-      _______, KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD, TO(_QWERTY),   TO(_NUMBERS), TO(_ADJUST), TO(_MOUSE), KC_AMPR, KC_EQL,  KC_COMM, KC_DOT,  KC_SLSH, KC_MINS,
-                                 _______, _______, _______, KC_SCLN, KC_EQL,  KC_EQL,  KC_SCOLON, _______, _______, _______
+    [SYMBOLS] = LAYOUT(
+      MOD_LSFT, KC_EXLM, KC_AT,   KC_LCBR, KC_RCBR, KC_PIPE,                                     _______, _______, _______, KC_SLSH, KC_BSLS, KC_BSPC,
+      KC_SCLN, KC_HASH, KC_DLR,  KC_LPRN, KC_RPRN, KC_GRV,                                      KC_PLUS, KC_MINS, KC_SLSH, KC_ASTR, KC_PERC, KC_QUOT,
+      KC_SCOLON, KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD, TO(QWERTY),   TO(NUMBERS), TO(ADJUST), TO(MOUSE), KC_AMPR, KC_EQL,  KC_COMM, KC_DOT,  KC_SLSH, KC_MINS,
+                                 _______, KC_ENT, KC_SPC, KC_SCLN, KC_EQL,  KC_EQL,  KC_SPC, KC_ENT, _______, _______
     ),
 /*
  * Raise Layer: Number keys, media, navigation
@@ -78,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-------------------------------------------.                              ,-------------------------------------------.
  * |        |   1  |  2   |  3   |  4   |  5   |                              |  6   |  7   |  8   |  9   |  0   |        |
  * |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
- * |        |      | Prev | Play | Next | VolUp|                              | Left | Down | Up   | Right|      |        |
+ * |   lshift   |      | Prev | Play | Next | VolUp|                              | Left | Down | Up   | Right|      |        |
  * |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
  * |        |      |      |      | Mute | VolDn| QWE |  SYMB |  | ADJ| MOU  | MLeft| Mdown| MUp  |MRight|      |        |
  * `----------------------+------+------+------+------+------|  |------+------+------+------+------+----------------------'
@@ -86,10 +87,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                        |      |      |      |      |      |  |      |      |      |      |      |
  *                        `----------------------------------'  `----------------------------------'
  */
-    [_NUMBERS] = LAYOUT(
+    [NUMBERS] = LAYOUT(
       _______, KC_1, 	  KC_2,    KC_3,    KC_4,    KC_5,                                        KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
-      _______, _______, KC_MPRV, KC_MPLY, KC_MNXT, KC_VOLU,                                     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______,
-      _______, _______, _______, _______, KC_MUTE, KC_VOLD, TO(_QWERTY), TO(_SYMBOLS), TO(_ADJUST), TO(_MOUSE), KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, _______, _______,
+    MOD_LSFT, _______, KC_MPRV, KC_MPLY, KC_MNXT, KC_VOLU,                                     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______,
+      _______, _______, _______, _______, KC_MUTE, KC_VOLD, TO(QWERTY), TO(SYMBOLS), TO(ADJUST), TO(MOUSE), KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, _______, _______,
                                  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
     ),
 /*
@@ -106,17 +107,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                        |      |      |      |      |      |  |      |      |      |      |      |
  *                        `----------------------------------'  `----------------------------------'
  */
-    [_ADJUST] = LAYOUT(
+    [ADJUST] = LAYOUT(
       _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                                       KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
       _______, RGB_TOG, RGB_SAI, RGB_HUI, RGB_VAI, RGB_MOD,                                     _______, _______, _______, KC_F11,  KC_F12,  _______,
-      _______, _______, RGB_SAD, RGB_HUD, RGB_VAD, RGB_RMOD,TO(_QWERTY), TO(_SYMBOLS), TO(_ADJUST), TO(_MOUSE), _______, _______, _______, _______, _______, _______,
+      _______, _______, RGB_SAD, RGB_HUD, RGB_VAD, RGB_RMOD,TO(QWERTY), TO(SYMBOLS), TO(ADJUST), TO(MOUSE), _______, _______, _______, _______, _______, _______,
                                  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
     ),
 // /*
 //  * Layer template
 //  *
 //  * ,-------------------------------------------.                              ,-------------------------------------------.
-//  * |        |   wUP|      |      |      |      |                              |      |      |    up  |      |      |      |
+//  * |        |   wUP|      |      |      |      |                              |  Colemak |      |    up  |      |      |      |
 //  * |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 //  * |        |  wdon| b1   |  b2  |      |      |                              |      |   left   |   down   |   right   |      |        |
 //  * |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
@@ -126,11 +127,32 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //  *                        |      |      |      |      |      |  |      |      |      |      |      |
 //  *                        `----------------------------------'  `----------------------------------'
 //  */
-     [_MOUSE] = LAYOUT(
-       _______, KC_MS_WH_UP, _______, _______, _______, _______,                                     _______, _______, KC_MS_UP, _______, _______, _______,
+     [MOUSE] = LAYOUT(
+       _______, KC_MS_WH_UP, _______, _______, _______, _______,                                     TO(COLEMAK), _______, KC_MS_UP, _______, _______, _______,
        _______, KC_MS_WH_DOWN, KC_MS_BTN1, KC_MS_BTN2, _______, _______,                                     _______, KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, _______, _______,
-       _______, _______, _______, _______, _______, _______, TO(_QWERTY), TO(_SYMBOLS), TO(_ADJUST), TO(_NUMBERS), _______, _______, _______, _______, _______, _______,
+       _______, _______, _______, _______, _______, _______, TO(QWERTY), TO(SYMBOLS), TO(ADJUST), TO(NUMBERS), _______, _______, _______, _______, _______, _______,
                                  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
+     ),
+
+// /*
+//  * Layer template
+//  *
+//  * ,-------------------------------------------.                              ,-------------------------------------------.
+//  * |  ESC   |   Q  |  W   |   F  |   P  |  B   |                              |   J  |   L  |   U  |   Y  |  Ö   |  Bksp  |
+//  * |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
+//  * |LSh|TAB |  A   |   R  |   S  |   T  |  G   |                              |   M  |   N  |  E   |   I  |  O   |   Ä    |
+//  * |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
+//  * |  Ctrl  |   Z  |   X  |   C  |   D  |  V   | QWE | SYMB |  | NUMB |  ADJ  |   K  |   H  | , < | . >   |  - _   |  /?  |
+//  * `----------------------+------+------+------+------+------|  |------+------+------+------+------+----------------------'
+//*                        | GUI  | Del  |      | Space| Esc  |  | Enter| Space| Tab  | Bksp | AltGr|
+// *                       |      |      | Alt  |Symbols|Mouse|  | SYMB | NUMB |      |      |      |
+// *                       `----------------------------------'  `----------------------------------'
+//  */
+     [COLEMAK] = LAYOUT(
+       KC_ESCAPE, KC_Q, KC_W, KC_F, KC_P, KC_B,                                     KC_J, KC_L, KC_U, KC_Y, FI_ODIA,KC_BSPC,
+       MT(MOD_LSFT, KC_TAB), KC_A, KC_R, KC_S, KC_T, KC_G,                          KC_M, KC_N, KC_E, KC_I, KC_O, FI_ADIA,
+       KC_LCTL, KC_Z, KC_X, KC_C, KC_D, KC_V, TO(QWERTY), TO(SYMBOLS), TO(ADJUST), TO(NUMBERS), KC_K, KC_H, KC_COMM, KC_DOT,  KC_MINS, KC_SLSH,
+             KC_LGUI, KC_DEL, KC_LALT, LT(SYMBOLS, KC_SPC), LT(MOUSE, KC_ESC), LT(SYMBOLS, KC_ENT), LT(NUMBERS, KC_SPC), KC_TAB,  KC_BSPC, KC_RALT
      ),
 };
 
@@ -157,21 +179,23 @@ static void render_status(void) {
     // Host Keyboard Layer Status
     oled_write_P(PSTR("Layer: "), false);
     switch (get_highest_layer(layer_state)) {
-        case _QWERTY:
+        case QWERTY:
             oled_write_P(PSTR("Default\n"), false);
             break;
-        case _SYMBOLS:
+        case SYMBOLS:
             oled_write_P(PSTR("Symbols\n"), false);
             break;
-        case _NUMBERS:
+        case NUMBERS:
             oled_write_P(PSTR("Numbers\n"), false);
             break;
-        case _ADJUST:
+        case ADJUST:
             oled_write_P(PSTR("Adjust\n"), false);
             break;
-        case _MOUSE:
+        case MOUSE:
             oled_write_P(PSTR("Mouse\n"), false);
             break;
+        case COLEMAK:
+            oled_write_P(PSTR("Colemak_dh\n"), false);
         default:
             oled_write_P(PSTR("Undefined\n"), false);
     }
@@ -420,14 +444,36 @@ void oled_task_user(void) {
 #ifdef ENCODER_ENABLE
 bool encoder_update_user(uint8_t index, bool clockwise) {
     if (index == 0) {
-        // Volume control
+        switch (biton32(layer_state)){
+        case NUMBERS:
+                if (clockwise) {
+            tap_code(KC_UP);
+        } else {
+            tap_code(KC_DOWN);
+        }
+            break;
+        
+        default:
         if (clockwise) {
             tap_code(KC_VOLU);
         } else {
             tap_code(KC_VOLD);
         }
+            break;
+        }
+        // Volume control
+        
     }
     else if (index == 1) {
+        switch (biton32(layer_state)){
+        case NUMBERS:
+                if (clockwise) {
+            tap_code(KC_LEFT);
+        } else {
+            tap_code(KC_RIGHT);
+        }
+            break;
+        default:
         if (clockwise) {
             if (!is_alt_tab_active) {
                 is_alt_tab_active = true;
@@ -439,7 +485,10 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
                     alt_tab_timer = timer_read();
                     tap_code16(S(KC_TAB));
                     }
-                }
+            break;
+        }
+    }
+        
         return true;
 }
 #endif
