@@ -5,7 +5,7 @@
  
  -------------------------------------------&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;------------------------------------------- <br/>
   | ESC&nbsp;|&emsp;Q&emsp;|&emsp;W&emsp;| &emsp;E&emsp;|&emsp;R&emsp;|&emsp;T&emsp;|&emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;                          |&emsp;Y&emsp;|&emsp;U&emsp;|&emsp;I&emsp;|&emsp;O&emsp;|&emsp;P&emsp;|&nbsp;Bksb&nbsp;|<br/>
-  |------+------+------+------+------+-----|&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|-----+------+------+------+------+-------| <br/>
+  |-----+------+------+------+-----+-----|&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|-----+------+------+------+------+-------| <br/>
  |LS/TB&nbsp;|&emsp;A&emsp;|&emsp;S&emsp;|&emsp;D&emsp;|&emsp;F&emsp;|&emsp;G&emsp;| &emsp;  &emsp;  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp; &emsp; &emsp; &emsp;|&emsp;H&emsp;| &emsp;J&emsp;|&emsp;K&emsp;|&emsp;L&emsp;|&emsp;Ö&emsp;|&emsp;Ä&emsp;| <br/>
   |--------+------+------+------+------+------+-----------------------------+------+------+------+------+------+------| <br/>
  |&emsp;Ctrl&emsp;|&emsp;Z&emsp;|&emsp;X&emsp;|&emsp;C&emsp;|&emsp;V&emsp;|&emsp;B&emsp;|&nbsp;Sym&nbsp;|&nbsp;Numb&nbsp;| |&nbsp;Adj&nbsp;|&nbsp;Mou&nbsp;|   &emsp;N&emsp;|&emsp;M&emsp;|&emsp; , <&emsp;|&emsp;. >&emsp;|&emsp;- _&emsp;|&emsp;lsh&emsp;| <br/>
