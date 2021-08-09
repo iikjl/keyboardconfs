@@ -1,18 +1,18 @@
 
 
 
- > Base Layer: QWERTY
- > 
- >  -------------------------------------------  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;   ------------------------------------------- <br/>
- > | ESC&emsp;|&emsp;Q&emsp;|&emsp;W&emsp;| &emsp;E&emsp;|&emsp;R&emsp;|&emsp;T&emsp;|     &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;                              |&emsp;Y&emsp;|&emsp;U&emsp;|&emsp;I&emsp;|&emsp;O&emsp;|&emsp;P&emsp;|&emsp;Bksp&emsp;|<br/>
- > |--------+------+------+------+------+------|  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;                             |------+------+------+------+------+--------| <br/>
- > |LShift/TAB | A |   S  |  D   |   F  |   G  |  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;                             |   H  |   J  |   K  |   L  |  ö   |  ä     | <br/>
- > |--------+------+------+------+------+------+-------------.  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp; ,-------------+------+------+------+------+------+--------| <br/>
- > | Ctrl |   Z  |   X  |   C  |   V  |   B  |Symbols|Numbers| &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;  |Adjust|Mouse|   N  |   M  | ,  < | . >   |  - _   |  lsh | <br/>
- >  ----------------------+------+------+------+------+------|  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp; |------+------+------+------+------+---------------------- <br/>
-                         | GUI  | Del  |      | Space|  ent |  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp; | Enter| Space| Tab  | Bksp | AltGr| <br/>
-                         |      |      | Alt  |Symbols|Mouse|  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp; | adj | NUMB |      |      |      | <br/>
-                          ----------------------------------    ----------------------------------  <br/>
+   #Base Layer: QWERTY
+ 
+ -------------------------------------------  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;   ------------------------------------------- <br/>
+  | ESC&nbsp;|&emsp;Q&emsp;|&emsp;W&emsp;| &emsp;E&emsp;|&emsp;R&emsp;|&emsp;T&emsp;|&emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;                          |&emsp;Y&emsp;|&emsp;U&emsp;|&emsp;I&emsp;|&emsp;O&emsp;|&emsp;P&emsp;|&nbsp;Bksb&nbsp;|<br/>
+  |------+------+------+------+------+--------|&nbsp;|&nbsp;&emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;|-----+------+------+------+------+-------| <br/>
+ |LS/TB&nbsp;|&emsp;A&emsp;|&emsp;S&emsp;|&emsp;D&emsp;|&emsp;F&emsp;|&emsp;G&emsp;| &emsp;  &emsp;  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp; &emsp; &emsp; &emsp;|&emsp;H&emsp;| &emsp;J&emsp;|&emsp;K&emsp;|&emsp;L&emsp;|&emsp;Ö&emsp;|&emsp;Ä&emsp;| <br/>
+  |--------+------+------+------+------+------+-----------------------------+------+------+------+------+------+------| <br/>
+ |&emsp;Ctrl&emsp;|&emsp;Z&emsp;|&emsp;X&emsp;|&emsp;C&emsp;|&emsp;V&emsp;|&emsp;B&emsp;|&nbsp;Sym&nbsp;|&nbsp;Numb&nbsp;| |&nbsp;Adj&nbsp;|&nbsp;Mou&nbsp;|   &emsp;N&emsp;|&emsp;M&emsp;|&emsp; , <&emsp;|&emsp;. >&emsp;|&emsp;- _&emsp;|&emsp;lsh&emsp;| <br/>
+   ---------+------+------+------+------+------+------+--------|   |------+-------+-------+------+--------+-------+--------+--------|<br/>
+&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;|&nbsp;GUI&nbsp;|&nbsp;Del&nbsp;|&nbsp;Alt&nbsp;|&emsp;Space&emsp;|&nbsp;Ent&nbsp;| |&nbsp;Ent&nbsp;|&emsp;Space&emsp;| &nbsp;Tab&nbsp;|&nbsp;Bksp&nbsp;|AltGr| <br/>
+&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;| &emsp;&nbsp;&emsp;|&emsp;&nbsp;&emsp;|&emsp;Alt&emsp;|Sym|Mou| | adj | NUMB |&emsp;&nbsp;&emsp;|&emsp;&nbsp;&emsp;|&emsp;&nbsp;&emsp;| <br/>
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;----------------------------------    ----------------------------------  <br/>
   numbers: Number keys, media, navigation
  
  ,-------------------------------------------.                              ,-------------------------------------------. <br/>
