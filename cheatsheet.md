@@ -11,7 +11,7 @@
  |&emsp;Ctrl&emsp;|&emsp;Z&emsp;|&emsp;X&emsp;|&emsp;C&emsp;|&emsp;V&emsp;|&emsp;B&emsp;|&nbsp;Sym&nbsp;|&nbsp;Numb&nbsp;| |&nbsp;Adj&nbsp;|&nbsp;Mou&nbsp;|   &emsp;N&emsp;|&emsp;M&emsp;|&emsp; , <&emsp;|&emsp;. >&emsp;|&emsp;- _&emsp;|&emsp;lsh&emsp;| <br/>
    ---------+------+------+------+------+------+------+--------|   |------+-------+-------+------+--------+-------+--------+--------|<br/>
 &emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;|&nbsp;GUI&nbsp;|&nbsp;Del&nbsp;|&nbsp;Alt&nbsp;|&emsp;Space&emsp;|&nbsp;Ent&nbsp;| |&nbsp;Ent&nbsp;|&emsp;Space&emsp;| &nbsp;Tab&nbsp;|&nbsp;Bksp&nbsp;|AltGr| <br/>
-&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;| &emsp;&nbsp;&emsp;|&emsp;&nbsp;&emsp;|&emsp;Alt&emsp;|Sym|Mou| | adj | NUMB |&emsp;&nbsp;&emsp;|&emsp;&nbsp;&emsp;|&emsp;&nbsp;&emsp;| <br/>
+&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;| &emsp;&nbsp;&emsp;|&emsp;&nbsp;&emsp;|&emsp;&nbsp;&emsp;|Sym|Mou| | adj | NUMB |&emsp;&nbsp;&emsp;|&emsp;&nbsp;&emsp;|&emsp;&nbsp;&emsp;| <br/>
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;----------------------------------    ----------------------------------  <br/>
   numbers: Number keys, media, navigation
  
