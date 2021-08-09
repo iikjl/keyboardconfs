@@ -4,14 +4,14 @@
  > Base Layer: QWERTY
  > 
  >  -------------------------------------------  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;   ------------------------------------------- <br/>
- > | ESC|   Q  |   W  |   E  |   R  |   T  |     &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;                              |   Y  |   U  |   I  |   O  |   P  |  Bksp  | <br/>
- > |--------+------+------+------+------+------|                              |------+------+------+------+------+--------| <br/>
- > |LShift/TAB | A |   S  |  D   |   F  |   G  |                              |   H  |   J  |   K  |   L  |  ö   |  ä     | <br/>
- > |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------| <br/>
- > | Ctrl |   Z  |   X  |   C  |   V  |   B  |Symbols|Numbers|  |Adjust|Mouse|   N  |   M  | ,  < | . >   |  - _   |  lsh | <br/>
- >  ----------------------+------+------+------+------+------|  |------+------+------+------+------+---------------------- <br/>
-                         | GUI  | Del  |      | Space|  ent |  | Enter| Space| Tab  | Bksp | AltGr| <br/>
-                         |      |      | Alt  |Symbols|Mouse|  | adj | NUMB |      |      |      | <br/>
+ > | ESC|   Q  |   W  |   E  |   R  |   T  |     &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;                              |   Y  |   U  |   I  |   O  |   P  |  Bksp  |<br/>
+ > |--------+------+------+------+------+------|  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;                             |------+------+------+------+------+--------| <br/>
+ > |LShift/TAB | A |   S  |  D   |   F  |   G  |  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;                             |   H  |   J  |   K  |   L  |  ö   |  ä     | <br/>
+ > |--------+------+------+------+------+------+-------------.  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp; ,-------------+------+------+------+------+------+--------| <br/>
+ > | Ctrl |   Z  |   X  |   C  |   V  |   B  |Symbols|Numbers| &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;  |Adjust|Mouse|   N  |   M  | ,  < | . >   |  - _   |  lsh | <br/>
+ >  ----------------------+------+------+------+------+------|  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp; |------+------+------+------+------+---------------------- <br/>
+                         | GUI  | Del  |      | Space|  ent |  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp; | Enter| Space| Tab  | Bksp | AltGr| <br/>
+                         |      |      | Alt  |Symbols|Mouse|  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp; | adj | NUMB |      |      |      | <br/>
                           ----------------------------------    ----------------------------------  <br/>
   numbers: Number keys, media, navigation
  
