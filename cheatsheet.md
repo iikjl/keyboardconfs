@@ -3,7 +3,7 @@
 
    #Base Layer: QWERTY
  
- -------------------------------------------&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;------------------------------------------- <br/>
+ -------------------------------------------&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;------------------------------------------- <br/>
   | ESC&nbsp;|&emsp;Q&emsp;|&emsp;W&emsp;| &emsp;E&emsp;|&emsp;R&emsp;|&emsp;T&emsp;|&emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;                          |&emsp;Y&emsp;|&emsp;U&emsp;|&emsp;I&emsp;|&emsp;O&emsp;|&emsp;P&emsp;|&nbsp;Bksb&nbsp;|<br/>
   |------+------+------+------+------+--------|&nbsp;|&nbsp;&emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;|-----+------+------+------+------+-------| <br/>
  |LS/TB&nbsp;|&emsp;A&emsp;|&emsp;S&emsp;|&emsp;D&emsp;|&emsp;F&emsp;|&emsp;G&emsp;| &emsp;  &emsp;  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp; &emsp; &emsp; &emsp;|&emsp;H&emsp;| &emsp;J&emsp;|&emsp;K&emsp;|&emsp;L&emsp;|&emsp;Ö&emsp;|&emsp;Ä&emsp;| <br/>
