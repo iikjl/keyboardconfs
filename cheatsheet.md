@@ -4,7 +4,7 @@
  > Base Layer: QWERTY
  > 
  >  -------------------------------------------  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;   ------------------------------------------- <br/>
- > | ESC &emsp;|&emsp;Q&emsp;|&emsp;W&emsp;| &emsp;  E &emsp; |&emsp;R&emsp;|&emsp;&emsp;T&emsp;|     &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;                              |   Y  |   U  |   I  |   O  |   P  |  Bksp  |<br/>
+ > | ESC&emsp;|&emsp;Q&emsp;|&emsp;W&emsp;| &emsp;E&emsp;|&emsp;R&emsp;|&emsp;T&emsp;|     &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;                              |&emsp;Y&emsp;|&emsp;U&emsp;|&emsp;I&emsp;|&emsp;O&emsp;|&emsp;P&emsp;|&emsp;Bksp&emsp;|<br/>
  > |--------+------+------+------+------+------|  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;                             |------+------+------+------+------+--------| <br/>
  > |LShift/TAB | A |   S  |  D   |   F  |   G  |  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;                             |   H  |   J  |   K  |   L  |  ö   |  ä     | <br/>
  > |--------+------+------+------+------+------+-------------.  &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp; ,-------------+------+------+------+------+------+--------| <br/>
