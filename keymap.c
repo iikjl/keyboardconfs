@@ -70,8 +70,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
     [SYMBOLS] = LAYOUT(
       KC_BSPC, FI_EXLM, FI_DQUO, FI_HASH, FI_CURR, FI_PERC,                                     FI_AMPR, FI_SLSH, FI_LPRN, FI_RPRN, FI_EQL, FI_QUES,
-       _______, FI_AT, FI_PND,  FI_DLR, FI_EURO, KC_QUOT,                                      FI_LCBR, FI_RCBR, FI_LBRC, FI_RBRC, FI_BSLS, FI_PIPE,
-      _______, FI_RABK, FI_LABK, FI_CIRC, FI_PLUS, KC_GRAVE, TO(QWERTY),   TO(NUMBERS), TO(ADJUST), TO(ADJUST), FI_TILD, FI_MICR,  FI_ASTR, _______,  _______, _______,
+       _______, FI_AT, FI_PND,  FI_DLR, FI_EURO, FI_QUOT,                                      FI_LCBR, FI_RCBR, FI_LBRC, FI_RBRC, FI_BSLS, FI_PIPE,
+      _______, FI_RABK, FI_LABK, FI_CIRC, FI_PLUS, FI_ACUT, TO(QWERTY),   TO(NUMBERS), TO(ADJUST), TO(ADJUST), FI_TILD, FI_MICR,  FI_ASTR, _______,  _______, _______,
        KC_LGUI, KC_DEL, KC_LALT, LT(SYMBOLS, KC_SPC), LT(ADJUST, KC_ENT), LT(ADJUST, KC_ENT), LT(NUMBERS, KC_SPC), KC_TAB,  KC_BSPC, KC_RALT
     ),
 /*
@@ -335,7 +335,13 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
                 tap_code16(S(KC_F3));
                 }
             break;
-        
+        case SYMBOLS:
+        if (clockwise) {
+            tap_code(KC_PGDN);
+            } else {
+                 tap_code(KC_PGUP);
+                 }
+        break;
         default:
         if (clockwise) {
             tap_code(KC_VOLU);
@@ -363,6 +369,13 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
                 tap_code16(S(C(KC_TAB)));
                 }
             break;
+        case SYMBOLS:
+        if (clockwise) {
+  tap_code16(C(KC_RGHT));
+} else {
+  tap_code16(C(KC_LEFT));
+}
+        break;
         default:
         if (clockwise) {
             if (!is_alt_tab_active) {
