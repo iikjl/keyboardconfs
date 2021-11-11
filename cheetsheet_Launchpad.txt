@@ -1,0 +1,40 @@
+Keymap _BL: (Base Layer) Default Numpad Layer
+  ,-------------------.
+  |* (NV)| / | -  |BK FN|  nuppi ääni, 
+  |----|----|----|-----|   * pidä pohjassa tulee NV-taso
+  | 7  | 8  | 9  | tab | BK pidä  pohjassa tulee FN taso
+  |----|----|----|-----|
+  | 4  | 5  | 6  |  +  |
+  |----|----|----|-----|
+  | 1  | 2  | 3  |     |
+  |----|----|----| En  |
+  |    0    | ,  |     |
+  `--------------------'
+
+
+Keymap _NV: Navigation layer
+  ,-------------------.
+  |INS |HOME|PGUP|    | nuppi skrolli
+  |----|----|----|----|
+  |DEL |END |PGDN|    |
+  |----|----|----|----|
+  |    | UP |    |    |
+  |----|----|----|----|
+  |LEFT|DOWN|RIGH|    |
+  |----|----|----|    |
+  |         |    |    |
+  `-------------------'
+ 
+
+ Keymap _FN: RGB Function Layer
+  ,-------------------.
+  |RMOD|RGBP|RTOG| FN |
+  |----|----|----|----|
+  |HUD |HUI |    |    |
+  |----|----|----|----|
+  |SAD |SAI |    |    |
+  |----|----|----|----|
+  |VAD |VAS |    |    |
+  |----|----|----|    |
+  |RST |    |    |    |
+  `-------------------'
